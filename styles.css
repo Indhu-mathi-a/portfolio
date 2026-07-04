@@ -1257,6 +1257,133 @@ section {
     transform: translateY(0);
 }
 
+/* ==================== ACHIEVEMENTS SECTION ==================== */
+.achievements {
+    background: var(--bg-light);
+}
+
+.achievements-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.achievement-card {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2.5rem;
+    display: flex;
+    gap: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.achievement-badge {
+    font-size: 3rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-light);
+    flex-shrink: 0;
+}
+
+.achievement-badge i.silver {
+    color: #94a3b8;
+    filter: drop-shadow(0 2px 8px rgba(148, 163, 184, 0.4));
+}
+
+.achievement-badge i.gold {
+    color: #eab308;
+    filter: drop-shadow(0 2px 8px rgba(234, 179, 8, 0.4));
+}
+
+.achievement-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.achievement-date {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.achievement-title {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.achievement-org {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.achievement-description {
+    color: var(--text-gray);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.team-members {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.team-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.team-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.team-tag {
+    background: var(--bg-lighter);
+    color: var(--primary-color);
+    padding: 0.35rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: var(--transition-fast);
+}
+
+.team-tag:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
 /* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 1024px) {
     .hero-content {
@@ -1371,6 +1498,18 @@ section {
     .leadership-box {
         flex-direction: column;
         text-align: center;
+    }
+
+    .achievement-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .team-tags {
+        justify-content: center;
     }
 
     section {

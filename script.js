@@ -96,7 +96,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Add fade-in class to elements
 const animateElements = document.querySelectorAll(
-    '.skill-category, .project-card, .cert-card, .education-card, .workshop-category, .about-text'
+    '.skill-category, .project-card, .cert-card, .education-card, .workshop-category, .about-text, .achievement-card'
 );
 
 animateElements.forEach(el => {
